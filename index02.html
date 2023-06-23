@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="./img/logo-shortcut.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="keyframe.css">
+    <link rel="stylesheet" href="dialog.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/element-plus-icons-vue/2.1.0/index.min.js" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fontFace.css">
+    <link rel="stylesheet" href="main01Style.css">
+    
+    <!-- <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <link rel="stylesheet" type="text/css" href="./library/slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="./library/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="./library/bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./library/bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link href="./library/aos-master/aos-master/dist/aos.css" rel="stylesheet">
+    <script src="./library/aos-master/aos-master/dist/aos.js"></script>
+    <title>Services - Nối Vòng Tay Lớn</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        font-family:  Arial, Helvetica, sans-serif;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow-x:hidden;
+        
+    }
+    ul{
+        list-style-type: none;
+    }
+</style>
+<body>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="app.js"></script>
+
+    <nav style="background-color: rgb(0, 255, 34);" class="header" 
+     data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <a class="logoHeader" href="index.html">
+            <img onmouseover="changeImage()" id="myLogo" class="logoHeader" src="./img/NVTL.png" style="height: 40px;">
+        </a>
+        <ul  class="ulMenu-father" id="ulMenu-father">
+                
+                <li  class="menuItems"><a href="index.html"><font>Home</font><i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-home"></i></a></li>
+                <li id="menuItems" class="menuItems menuService">
+                    <a href="#MusicSubmit"><font>Releases <i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-file-upload"></i></font> </a></li>
+                <a href="#veChungtoi"><li class="menuItems"><a href="#veChungToi"><font>About US</font><i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-people-group"></i> </a></li></a>
+                <li class="menuItems"><a href="#MusicProduction"><font>Packs</font> <i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-download"></i></a></li> 
+                <li onmousemove="changeClass()" onclick="loginBox(),tatDangKy(),batDangNhap(),changeClassChild()"  class="menuItems"><a ><font >Login</font> <i id="loginNav" style="margin-left: 5px;" class="fa-solid fa-right-to-bracket"></i></a></li>
+
+        </ul>        
+        
+    </nav>
+
+    <div data-aos="fade-right" id="veChungToi" class="veChungToi" style="margin-top:40px; color: rgb(253, 253, 253);background-color: rgb(34, 34, 34);width: 100%;height: 750px;">
+        
+        <main data-aos="flip-left" class="cacThongTin" >
+            <font style="text-decoration:underline; line-height: 35px;" class="thongTin VCT">Do you want your product to become famous?</font><br><br>
+            <div></div>
+            <font class="thongTin DLD" >"It's time for your music to take the throne and we're proud to be able to
+                introduce your products to a global audience".</font><br>
+            <font class="thongTin NVTL" >Let <span style="font-weight: bold;color: rgb(252, 214, 0);">Nối Vòng Tay Lớn</span> bring your products to everyone.</font>
+            <a href="#MusicSubmit" style="font-size: 18px;color: rgb(255, 255, 255);" class="thongTin CCCG" >What are you waiting for! Send your music to us so people all over the world can enjoy it right away.</a>
+        </main>
+
+        <div class="logo014nnguy3n">
+            <img  id="logo014nnguy3n" src="./img/Slider/aboutUS/aboutUS.png">
+        </div>
+
+        <div data-aos="flip-up" class="products">
+            <div class="product-content-1">
+                <img style="cursor: pointer;" id="AlanWalker" onclick="setTimeout( changeImageAlanWalker,500),setTimeout(capforAlanWalker,500) ,  job()" class="avatar" src="./img/martingarrix!.jpg" alt="" srcset="">
+                <p style="font-weight: bold;font-size: 25px;line-height: 2px;">Thiên Phúc</p>
+                <font id="job" style="display: block;">Co-Founder</font>
+                <div style="display: none;" id="capforAlanWalker">Thien Phuc is the co-founder of "Nối Vòng Tay Lớn"</div>
+                
+            </div>
+            <div class="product-content-2">
+                <img style="cursor: pointer;" id="ceo014nnguy3n" onclick="setTimeout(changeImage014nnguy3n,500),setTimeout( capforAnNguyen,500), jobForAnNguyen()" class="avatar" src="./img/2021-11-13-20-42-18-220.jpg" alt="" srcset="">
+                <p style="font-weight: bold;font-size: 25px;line-height: 2px;">Nguyễn Thành An</p>
+                <font  id="jobForAnNguyen" style="display: block;">CEO/ Founder</font>
+                <div style="display: none;" id="capforAnNguyen">He is the owner and founder of "Nối Vòng Tay Lớn"</div>
+
+            </div>
+            <div class="product-content-3">
+                <img style="cursor: pointer;" id="zekrisemusic" onclick="setTimeout(changeImagezekrisemusic,500), setTimeout(capforZekrisemusic,500), jobForZekrisemusic()" class="avatar" src="./img/zekrisemusic2.jpg" alt="" srcset="">
+                <p style="font-weight: bold;font-size: 25px;line-height: 2px;">Zekrise Music</p>
+                <font  id="jobForZekrisemusic" style="display: block;">Investor</font>
+                <div style="display: none;" id="capforZekrisemusic">The only VIP financial investor of "Nối Vòng Tay Lớn"</div>
+
+            </div>
+        </div>
+
+    </div>        
+    
+
+    <main id="MusicProduction" class="MusicProduction">
+        <div style="margin-top: 50px;" data-aos="zoom-in-up" class="contentMusicProduction">
+            <div></div>
+            <div style="text-align: center;font-size: 45px;color: #000000;font-family:'SVN-Justice League' ;
+                height: 100px;
+            ">Free sample music pack for production</div>
+            <div></div>
+            <div class="contentMusicAlike contentMusicProduction1">
+                <img src="./img/Slider/Arts/item/felling.jpg">
+                <font class="artistName">Feelings Sample Pack - Future Bounce/Future House</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction2">
+                <img src="./img/Slider/Arts/item/cover_337.png">
+                <font class="artistName">Ultrasonic - Future Bass Essentials Vol.2</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction3">
+                <img src="https://static.wixstatic.com/media/a84bb2_67705d5a2dd642feab3a734550f23ca0~mv2.png/v1/fill/w_512,h_447,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SLap%20House%20Center.png">
+                <font class="artistName">Ultrasonic - Slap House Essentials Vol.1 </font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction4">
+                <img src="./img/Slider/Arts/item/artworks-K2orl7sxrSmsz1bo-5LlGeg-t500x500.jpg">
+                <font class="artistName">Future Bass Vol.2</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction5">
+                <img src="./img/Slider/Arts/item/cover_336.png">
+                <font class="artistName">Ultrasonic - Future House Essentials</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction6">
+                <img src="https://splice-res.cloudinary.com/image/upload/f_auto,q_auto,w_auto/c_limit,w_450/v1534525746/1534525738.jpg">
+                <font class="artistName">Sounds Of KSHMR Vol.3</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction7">
+                <img src="./img/Slider/Arts/item/kshmrVol4.jpg">
+                <font class="artistName">Sounds Of KSHMR Vol.4</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction8">
+                <img src="https://cdn.shopify.com/s/files/1/1271/7985/products/Future_n_Bounce.png?v=1557417109&width=1946">
+                <font class="artistName">Future & Bounce</font>
+                <font class="trackName">Download</font>
+            </div>
+            <div class="contentMusicAlike contentMusicProduction9">
+                <img src="./img/Slider/Arts/item/a84bb2_c4ab5b9993f246c581913a15fb66f83b~mv2.png">
+                <font class="artistName">Ultrasonic - Future Bounce Vol.1</font>
+                <font class="trackName">Download</font>
+            </div>
+
+        </div>
+
+    </main>
+    <main id="MusicSubmit" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="500" class="MusicSubmit">
+        <div  class="contactContent" style="margin-top: 120px;">
+            <p class="textforFirstName3">SUBMIT YOUR MUSIC</p>
+            <input type="text" class="inputforFirstName3" placeholder="Your Name">
+            <!-- <p class="textforEmail3">Email</p> -->
+            <input type="text" class="inputforEmail3" placeholder="Email">
+            <!-- <p class="textforPhone">Phone</p> -->
+            <input type="tel" class="inputforPhone" placeholder="Phone">
+            <input class="custom-file-input" type="file">
+            <!-- <p class="textforContent">Message</p> -->
+            <textarea style="resize: none;" class="inputforContent" placeholder="Message"></textarea>
+            <div  class="sendMessage">
+                <div onmousemove="tingTing()" class="sendMessage2"> 
+                    
+                    <font class="textforSendMessage">Submit <i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-file-upload"></i></font>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <div data-aos="fade-down"
+    style="margin-top:40px;">
+        <main data-aos="fade-down" class="backendHeader">
+             <div class="GioiThieu">
+                <div class="contentGioiThieu">
+                    <font style="font-size: 25px;display: grid;place-items: center;" class="ChuChaoMung" color="white">Chào mừng bạn đến với gia đình 
+                    <font class="nameLabel" style="font-size: 45px;font-weight: bold; text-shadow: 0px 0px 10px white;-webkit-text-stroke: 1px #ffffff;;
+                    ">Nối vòng tay lớn</font></font>
+                    <div class="menuMangXaHoi">
+                        <a href="https://www.facebook.com/014nnguy3n.personal"><img class="iconLogo" id="facebookLogo"src="./img/Facebook_Logo_(2019).png" alt="" srcset=""></a>
+                        <a href="https://www.instagram.com/014nnguy3n_/"><img class="iconLogo" id="instagramLogo"src="./img/Instagram-Icon.png" alt="" srcset=""></a>
+                        <a href="https://open.spotify.com/artist/56NRmT8hMgI6CrRZv2GsLF"><img class="iconLogo" id="spotifyLogo"src="./img/Spotify_logo_without_text.svg.png" alt="" srcset=""></a>
+                        <a href="https://soundcloud.com/annguyen014nnguy3n"><img class="iconLogo" id="soundcloudLogo"src="./img/soundcloud_318-157470.png" alt="" srcset=""></a> 
+                     </div>
+                </div>
+            </div> -->
+            <!-- <div class="FrameSlide">
+                <div data-aos="flip-left" class="SliderImage">
+                
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;" class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+            
+                </div>
+                
+            </div>
+
+        </main>
+    </div> --> 
+
+    
+    <div  id="khungDangNhap"  class="khungDangNhap">
+        <div  class="dangnhap">
+            <div data-aos="flip-down" onclick="tatDangKy(),batDangNhap(), changeClassChild(),notChangeClassChild2()" class="nut-form-dang-nhap">Sign <i id="iconChild" class="fa-solid fa-right-to-bracket" style="padding-left: 5px;color: #ffffff;"></i> </div>
+            <div onclick="tatDangNhap(),batDangKy(),notChangeClassChild(),changeClassChild2()"  class="nut-form-dang-ky">Register <i id="iconChild2" class="fa-regular fa-address-card" style="padding-left: 5px;color: #000000;"></i> <span onclick="TatKhungDangNhap(), notChangeClass()" class="x2" id="x2"><i style="color: rgb(250, 0, 0);" class="fa-sharp fa-solid fa-1 fa-circle-xmark"></i></span></div>
+            <form id="form-dang-nhap"  class="form-dang-nhap"action="">
+                <p class="textforlogin-Email">Email</p>
+                <input class="inputforEmail" type="text">
+                <p class="textforlogin-Password">Password</p>
+                <input class="inputforPassword"  type="password">
+       
+                <input class="sumbitforLogin" type="button" value="Login">
+                <a href="#form-dang-ky" class="textforForgotpassword">Forgot your password?</a>
+                <a onclick="tatDangNhap(),batDangKy()"  class="textforHaveNotAccount">Do not have an account?</a>
+               <!-- <a href="">Forgot your password?</a>  -->
+            </form>
+            <form id="form-dang-ky" class="form-dang-ky" action="">
+                <p class="textforFirstName">First Name</p>
+                <input type="text" class="inputforFirstName">
+                <p class="textforLastName">Last Name</p>
+                <input type="text" class="inputforLastName">
+                <p class="textforEmail1">Email</p>
+                <input type="email" class="inputforEmail1">
+                <p class="textforlogin-Password1">Password</p>
+                <input class="inputforPassword1"  type="password">
+                <div style="grid-row: 9/10;"></div>
+                <input class="sumbitforRegister" type="button" value="Send"> 
+            </form>
+           
+        </div>
+        
+    </div>
+    <audio style="visibility: hidden;" controls autoplay>
+        <source src="./sound/The Vibes (1).mp3">
+    </audio>
+    <footer class="blueArea" style="background: linear-gradient(to right, rgb(89, 0, 255),rgb(253, 0, 42),rgb(211, 86, 3));;width: 100%;height: 250px;margin-top: 0px; display: grid;grid-template-columns: 200px auto 200px;grid-template-rows: 80px 50px 60px;">
+        <div style="grid-column: 2/3; grid-row: 1/2; width: auto; height: auto;display: flex;justify-content: center;align-items: center;"><img style="width:500px;" src="./img/NVTL_white.png" alt=""></div>
+        <div style="grid-column: 2/3; grid-row: 2/3; width: auto; height: auto;display: flex;justify-content: center;align-items: center;">
+            
+            <a href=""><i id="loginNav" style="margin-left: 20px; margin-bottom: 5px;" class="fab fa-3x fa-facebook"></i></a>
+            <a href=""><i id="loginNav" style="margin-left: 20px; margin-bottom: 5px;" class="fab fa-3x fa-instagram"></i></a>
+            <a href=""><i id="loginNav" style="margin-left: 20px; margin-bottom: 5px;" class="fab fa-3x fa-twitter"></i></a>
+        </div>
+        <div style="font-size: 18px;font-weight: bold;color: #ffffff;grid-column: 2/3; grid-row: 3/4; width: auto; height: auto;display: flex;justify-content: center;align-items: center;">
+            &#169; 2023 Noi Vong Tay Lon Music CO., LTD. All rights Reserved.
+        </div>
+
+
+
+    </footer>
+
+ 
+<script src="index.js">
+</script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

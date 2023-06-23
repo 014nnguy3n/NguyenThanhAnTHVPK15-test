@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="./img/logo-shortcut.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="keyframe.css">
+    <link rel="stylesheet" href="dialog.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/element-plus-icons-vue/2.1.0/index.min.js" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fontFace.css">
+    <link rel="stylesheet" href="main01Style.css">
+    
+    <!-- <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <link rel="stylesheet" type="text/css" href="./library/slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="./library/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="./library/bootstrap-4.0.0/bootstrap-4.0.0/dist/css/bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./library/bootstrap-4.0.0/bootstrap-4.0.0/dist/js/bootstrap.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link href="./library/aos-master/aos-master/dist/aos.css" rel="stylesheet">
+    <script src="./library/aos-master/aos-master/dist/aos.js"></script>
+    <title>Home - Nối Vòng Tay Lớn</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        font-family:  Arial, Helvetica, sans-serif;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow-x:hidden;
+        
+    }
+    ul{
+        list-style-type: none;
+    }
+</style>
+<body>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="app.js"></script>
+
+    <nav class="header" 
+     data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <a class="logoHeader" href="index.html">
+            <img onmouseover="changeImage()" id="myLogo" class="logoHeader" src="./img/NVTL.png" style="height: 40px;">
+        </a>
+        <ul class="ulMenu-father" id="ulMenu-father">
+                
+                <li class="menuItems"><a href="index.html"><font>Home</font><i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-home"></i></a></li>
+                <li id="menuItems" class="menuItems menuService">
+                    <a href="#"><font>Services </font><i style="padding-left: 4px;margin-bottom: 5px;" class="fa-solid fa-chevron-down"></i> </a>
+                    <div class="menuItem mn1">
+                        <div style="height: 5px;background-color: transparent;"></div>
+                        <a href="index02.html#MusicSubmit" class="menubtn" style="display: flex;justify-content: center;align-items: center;border-bottom: 1px solid rgba(255, 255, 255, 0.856);height:30px;font-weight:600;color: white; ">
+                            Music Distribution Services</a>
+                        <a href="index02.html#MusicProduction"  class="menubtn" style="display: flex;justify-content: center;align-items: center;border-bottom: 1px solid rgba(255, 255, 255, 0.856);height:30px;font-weight:600;color: white; ">Music Samples</a>
+    
+                    </div>
+
+                
+               </li>
+                <a href="#veChungtoi"><li class="menuItems"><a href="#veChungToi"><font>About US</font><i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-people-group"></i> </a></li></a>
+                <li class="menuItems"><a href="#contact"><font>Contact</font> <i id="loginNav" style="margin-left: 5px; margin-bottom: 5px;" class="fa-solid fa-contact-card"></i></a></li> 
+                <li onmousemove="changeClass()" onclick="loginBox(),tatDangKy(),batDangNhap(),changeClassChild()"  class="menuItems"><a ><font >Login</font> <i id="loginNav" style="margin-left: 5px;" class="fa-solid fa-right-to-bracket"></i></a></li>
+
+        </ul>        
+        
+    </nav>
+
+
+    <div data-aos="fade-down"
+    style="margin-top:40px;">
+        <main data-aos="fade-down" class="backendHeader">
+            <div class="GioiThieu">
+                <div class="contentGioiThieu">
+                    <font style="font-size: 35px;display: grid;place-items: center;" class="ChuChaoMung" color="white">Welcome to our family
+                    <font class="nameLabel" style="font-family: 'SVN-Justice League';font-size: 65px; text-shadow: 0px 0px 0px white;
+                    ">Nối vòng tay lớn</font></font>
+                    <div class="menuMangXaHoi">
+                        <a href="https://www.facebook.com/014nnguy3n.personal"><img class="iconLogo" id="facebookLogo"src="./img/Facebook_Logo_(2019).png" alt="" srcset=""></a>
+                        <a href="https://www.instagram.com/014nnguy3n_/"><img class="iconLogo" id="instagramLogo"src="./img/Instagram-Icon.png" alt="" srcset=""></a>
+                        <a href="https://open.spotify.com/artist/56NRmT8hMgI6CrRZv2GsLF"><img class="iconLogo" id="spotifyLogo"src="./img/Spotify_logo_without_text.svg.png" alt="" srcset=""></a>
+                        <a href="https://soundcloud.com/annguyen014nnguy3n"><img class="iconLogo" id="soundcloudLogo"src="./img/soundcloud_318-157470.png" alt="" srcset=""></a> 
+                     </div>
+                </div>
+            </div>
+            <div class="FrameSlide">
+                <div data-aos="flip-left" class="SliderImage">
+                
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide1.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide2.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide3.jpg"></div>
+                        <div style="background-color: transparent;" class="SliderContent"><img src="./img/Slider/Arts/slide4.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide5.jpg"></div>
+                        <div style="background-color: transparent;"  class="SliderContent"><img src="./img/Slider/Arts/slide6.jpg"></div>
+                        
+            
+                </div>
+                
+            </div>
+
+        </main>
+    </div>
+
+    <div data-aos="fade-right" id="veChungToi" class="veChungToi" style="margin-top:85px; color: rgb(253, 253, 253);background-color: rgb(34, 34, 34);width: 100%;height: 750px;">
+        
+        <main data-aos="flip-left" class="cacThongTin" >
+            <font style="text-decoration:underline;" class="thongTin VCT">Who are we?</font><br><br>
+            <div></div>
+            <font class="thongTin DLD" >"It's time for your music to take the throne and we're proud to be able to
+                introduce your product to a global audience".</font><br>
+            <font class="thongTin NVTL" ><span style="font-weight: bold;color: rgb(252, 214, 0);">Nối Vòng Tay Lớn</span>  is a music publishing company with bold Vietnamese characteristics founded by Vietnamese people with quality investment from elite artists such as producers 014NNGUY3N, Alan Walker, Martin Garrix, Son Tung MTP.</font>
+            <font class="thongTin CCCG" >What are you waiting for! Send your music to us so people all over the world can enjoy it right away.</font>
+        </main>
+
+        <div class="logo014nnguy3n">
+            <img  id="logo014nnguy3n" src="./img/Slider/aboutUS/aboutUS.png">
+        </div>
+        <div data-aos="flip-up" class="products">
+            <div class="product-content-1">
+                <img style="cursor: pointer;" id="AlanWalker" onclick="setTimeout( changeImageAlanWalker,500),setTimeout(capforAlanWalker,500) ,  job()" class="avatar" src="./img/martingarrix!.jpg" alt="" srcset="">
+                <p style="font-weight: bold;font-size: 25px;line-height: 2px;">Thiên Phúc</p>
+                <font id="job" style="display: block;">Co-Founder</font>
+                <div style="display: none;" id="capforAlanWalker">Thien Phuc is the co-founder of "Nối Vòng Tay Lớn"</div>
+                
+            </div>
+            <div class="product-content-2">
+                <img style="cursor: pointer;" id="ceo014nnguy3n" onclick="setTimeout(changeImage014nnguy3n,500),setTimeout( capforAnNguyen,500), jobForAnNguyen()" class="avatar" src="./img/2021-11-13-20-42-18-220.jpg" alt="" srcset="">
+                <p style="font-weight: bold;font-size: 25px;line-height: 2px;">Nguyễn Thành An</p>
+                <font  id="jobForAnNguyen" style="display: block;">CEO/ Founder</font>
+                <div style="display: none;" id="capforAnNguyen">He is the owner and founder of "Nối Vòng Tay Lớn"</div>
+
+            </div>
+            <div class="product-content-3">
+                <img style="cursor: pointer;" id="zekrisemusic" onclick="setTimeout(changeImagezekrisemusic,500), setTimeout(capforZekrisemusic,500), jobForZekrisemusic()" class="avatar" src="./img/zekrisemusic2.jpg" alt="" srcset="">
+                <p style="font-weight: bold;font-size: 25px;line-height: 2px;">Zekrise Music</p>
+                <font  id="jobForZekrisemusic" style="display: block;">Investor</font>
+                <div style="display: none;" id="capforZekrisemusic">The only VIP financial investor of "Nối Vòng Tay Lớn"</div>
+
+            </div>
+        </div>
+
+    </div>        
+    
+    <main  class="pinkArea" style="background-color: rgb(255, 255, 255);width: 100%;height: 350px;margin-top: 40px;">
+        <font class="textforWhy">Why should you choose US?</font>
+        <div class="FatherShape">        
+            <div data-aos="zoom-in" class="children child1"></div>
+            <div data-aos="zoom-in" class="children child2"></div>
+            <div data-aos="zoom-in" class="children child3"></div>
+        </div>
+
+        <!-- <p>Chúng tôi có hệ thống phân khối lớn với các nền tảng lớn trong và ngoài nước</p>
+        <p>Chúng tôi có thể giúp các bạn kiếm tiền từ chính doanh thu nhận được từ các sản phẩm Âm nhạc của bạn</p>
+        <p>Chúng tôi có thể quảng cáo giúp âm nhạc của bạn trở nên Viral</p>
+        <p>Chúng tôi rất hòa đồng và thích hợp tác cùng bạn</p>
+        <img src="./img/daNenTang.png" alt="" srcset=""> -->
+    
+    
+    </main>
+
+    <main data-aos="zoom-out" class="yellowArea" style="background-color: rgb(255, 255, 255);width: 100%;height: auto; margin-top:80px ;margin-bottom:40px;">
+        <font class="WeLeadYou">We lead you to the success!!!</font>
+        <div data-aos="zoom-out"  class="commentSlider">
+            <div class="commentContent">
+                <div class="picComment"><img src="./img/Slider/comment/Hand-5.png"></div>
+                <font class="commentContentInfor"><i style="margin-right:  8px;" class="fa-solid fa-1x fa-heart-music-camera-bolt fa-beat"></i> Let "Nối Vòng Tay Lớn" bring the melody to everyone</font>
+                <font class="commentContentInfor2">Our brand can bring your tunes to more than 120 countries.</font>
+            </div>
+            <div class="commentContent">
+                <div class="picComment"><img src="./img/Slider/comment/Hand-Reference2.png"></div>
+                <font class="commentContentInfor">Help you monetize your music</font>
+                <font class="commentContentInfor2">We only keep 3% of your music profits to work.</font>
+            </div>
+            <div class="commentContent">
+                <div class="picComment"><img src="./img/Slider/comment/Hand-3.png"></div>
+                <font class="commentContentInfor">Rating improves your experience in musical style </font>
+                <font class="commentContentInfor2">We have experienced producers who can train you to improve.</font>
+            </div>
+            <div class="commentContent">
+                <div class="picComment"><img src="./img/Slider/comment/Hand-7.png"></div>
+                <font style="font-size: 50px;" class="commentContentInfor">Join US <i style="margin-left:8px;color: red;" class="fa-solid fa-1x fa-heart-circle-plus fa-beat"></i></font>
+                <font onclick="loginBox(),tatDangKy(),batDangNhap(),changeClassChild()" class="commentContentInfor2 forAcessLogin">Log in or create an account to log in and join us.</font>
+            </div>
+
+        </div>
+    </main>
+    
+    <main  class="purpleArea" style="background-color: rgb(255, 255, 255);width: 100%;height: auto; margin-top: 50px;">
+        <!-- <div class="SliderImage">
+            
+            <div style="background-color: rgb(226, 186, 4);" class="SliderContent"><img src="./img/Slider/slide1.jpg"></div>
+            <div style="background-color: rgb(116, 42, 165);"  class="SliderContent"><img src="./img/Slider/slide2.jpg"></div>
+            <div style="background-color: rgb(165, 42, 124);"  class="SliderContent"><img src="./img/Slider/slide1.jpg"></div>
+            <div style="background-color: rgb(97, 165, 42);"  class="SliderContent"><img src="./img/Slider/slide2.jpg"></div>
+            <div style="background-color: rgb(209, 212, 6);" class="SliderContent"><img src="./img/Slider/slide1.jpg"></div>
+            <div style="background-color: rgb(116, 42, 165);"  class="SliderContent"><img src="./img/Slider/slide2.jpg"></div>
+            <div style="background-color: rgb(165, 42, 124);"  class="SliderContent"><img src="./img/Slider/slide1.jpg"></div>
+            <div style="background-color: rgb(97, 165, 42);"  class="SliderContent"><img src="./img/Slider/slide2.jpg"></div>
+
+          </div> -->
+        <font class="OurPartnerNetwork">Our partner network</font>
+        <div data-aos="zoom-in" class="SliderPartner" style="background-color: rgb(255, 255, 255);width: 100%;height: auto; margin-top: 50px;">
+            
+            <div style="width: 150px;background-color: rgb(255, 255, 255);" class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/spotify.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/shazam.png"></div>
+            <div style="width: 150px;background-color: rgb(252, 252, 252);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/tiktok.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/vevo.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);" class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/youtube.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/zingmp3.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);" class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/spotify.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/shazam.png"></div>
+            <div style="width: 150px;background-color: rgb(252, 252, 252);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/tiktok.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/vevo.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);" class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/youtube.png"></div>
+            <div style="width: 150px;background-color: rgb(255, 255, 255);"  class="SliderContentPartner"><img src="./img/Slider/Our PartnerNetwork/zingmp3.png"></div>
+
+        </div> 
+
+
+    </main> 
+
+    <!-- <main style="background-color: transparent;width: 100%;height:auto;display: flex;justify-content: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jqw7xOvgyxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main> -->
+    <main data-aos="zoom-in-down"  class="redArea" style="background-color: transparent;width: 100%;height:auto;">
+        <div style="margin-right:4rem;" class="iconforContact">
+            <div class="ContactContentOfIcon">
+                <i style="color: rgb(76, 0, 255);" class="fa-sharp fa-2x  fa-solid fa-mail-bulk "></i>
+                <font class="textforIconLeft1">nvtl.contact@gmail.com</font>
+                <i style="color: rgb(76, 0, 255);" class="fa-sharp fa-2x fa-solid fa-phone "></i>
+                <font class="textforIconLeft2">0-999-299-330</font>
+            </div>
+
+        </div>
+        <div class="contact" id="contact" >
+            
+            <div class="contactContent" style="margin-top: 80px;">
+                <p class="textforFirstName3">CONTACT</p>
+                <input type="text" class="inputforFirstName3" placeholder="Your Name">
+                <!-- <p class="textforEmail3">Email</p> -->
+                <input type="text" class="inputforEmail3" placeholder="Email">
+                <!-- <p class="textforPhone">Phone</p> -->
+                <input type="tel" class="inputforPhone" placeholder="Phone">
+                <select class="country">
+                    <option value="province city">Province, City</option>            
+                    <option value="01">Hà Nội</option>
+                
+                    <option value="02">Hà Giang</option>
+                
+                    <option value="04">Cao Bằng</option>
+                
+                    <option value="06">Bắc Kạn</option>
+                
+                    <option value="08">Tuyên Quang</option>
+                
+                    <option value="10">Lào Cai</option>
+                
+                    <option value="11">Điện Biên</option>
+                
+                    <option value="12">Lai Châu</option>
+                
+                    <option value="14">Sơn La</option>
+                
+                    <option value="15">Yên Bái</option>
+                
+                    <option value="17">Hoà Bình</option>
+                
+                    <option value="19">Thái Nguyên</option>
+                
+                    <option value="20">Lạng Sơn</option>
+                
+                    <option value="22">Quảng Ninh</option>
+                
+                    <option value="24">Bắc Giang</option>
+                
+                    <option value="25">Phú Thọ</option>
+                
+                    <option value="26">Vĩnh Phúc</option>
+                
+                    <option value="27">Bắc Ninh</option>
+                
+                    <option value="30">Hải Dương</option>
+                
+                    <option value="31">Hải Phòng</option>
+                
+                    <option value="33">Hưng Yên</option>
+                
+                    <option value="34">Thái Bình</option>
+                
+                    <option value="35">Hà Nam</option>
+                
+                    <option value="36">Nam Định</option>
+                
+                    <option value="37">Ninh Bình</option>
+                
+                    <option value="38">Thanh Hóa</option>
+                
+                    <option value="40">Nghệ An</option>
+                
+                    <option value="42">Hà Tĩnh</option>
+                
+                    <option value="44">Quảng Bình</option>
+                
+                    <option value="45">Quảng Trị</option>
+                
+                    <option value="46">Thừa Thiên Huế</option>
+                
+                    <option value="48">Đà Nẵng</option>
+                
+                    <option value="49">Quảng Nam</option>
+                
+                    <option value="51">Quảng Ngãi</option>
+                
+                    <option value="52">Bình Định</option>
+                
+                    <option value="54">Phú Yên</option>
+                
+                    <option value="56">Khánh Hòa</option>
+                
+                    <option value="58">Ninh Thuận</option>
+                
+                    <option value="60">Bình Thuận</option>
+                
+                    <option value="62">Kon Tum</option>
+                
+                    <option value="64">Gia Lai</option>
+                
+                    <option value="66">Đắk Lắk</option>
+                
+                    <option value="67">Đắk Nông</option>
+                
+                    <option value="68">Lâm Đồng</option>
+                
+                    <option value="70">Bình Phước</option>
+                
+                    <option value="72">Tây Ninh</option>
+                
+                    <option value="74">Bình Dương</option>
+                
+                    <option value="75">Đồng Nai</option>
+                
+                    <option value="77">Bà Rịa - Vũng Tàu</option>
+                
+                    <option value="79">Hồ Chí Minh</option>
+                
+                    <option value="80">Long An</option>
+                
+                    <option value="82">Tiền Giang</option>
+                
+                    <option value="83">Bến Tre</option>
+                
+                    <option value="84">Trà Vinh</option>
+                
+                    <option value="86">Vĩnh Long</option>
+                
+                    <option value="87">Đồng Tháp</option>
+                
+                    <option value="89">An Giang</option>
+                
+                    <option value="91">Kiên Giang</option>
+                
+                    <option value="92">Cần Thơ</option>
+                
+                    <option value="93">Hậu Giang</option>
+                
+                    <option value="94">Sóc Trăng</option>
+                
+                    <option value="95">Bạc Liêu</option>
+                                                
+                    <option value="96">Cà Mau</option>
+                    
+                  </select>
+                <!-- <p class="textforContent">Message</p> -->
+                <textarea style="resize: none;" class="inputforContent" placeholder="Message"></textarea>
+                <div  class="sendMessage">
+                    <div onmousemove="tingTing()" class="sendMessage2"> 
+                        <i id="tingTing" class="fa-sharp fa-solid fa-message" style="padding-right: 5px;color: #ffffff;"></i>
+                        <font class="textforSendMessage">Send Message</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <audio style="visibility: hidden;" controls autoplay>
+        <source src="./sound/JARINMovingOn.mp3">
+    </audio>
+
+    <footer class="blueArea" style="background: linear-gradient(to right, rgb(89, 0, 255),rgb(253, 0, 42),rgb(211, 86, 3));width: 100%;height: 250px;margin-top: 200px; display: grid;grid-template-columns: 200px auto 200px;grid-template-rows: 80px 50px 60px;">
+        <div style="grid-column: 2/3; grid-row: 1/2; width: auto; height: auto;display: flex;justify-content: center;align-items: center;"><img style="width:500px;" src="./img/NVTL_white.png" alt=""></div>
+        <div style="grid-column: 2/3; grid-row: 2/3; width: auto; height: auto;display: flex;justify-content: center;align-items: center;">
+            
+            <a href=""><i id="loginNav" style="margin-left: 20px; margin-bottom: 5px;" class="fab fa-3x fa-facebook"></i></a>
+            <a href=""><i id="loginNav" style="margin-left: 20px; margin-bottom: 5px;" class="fab fa-3x fa-instagram"></i></a>
+            <a href=""><i id="loginNav" style="margin-left: 20px; margin-bottom: 5px;" class="fab fa-3x fa-twitter"></i></a>
+        </div>
+        <div style="font-size: 18px;font-weight: bold;color: #ffffff;grid-column: 2/3; grid-row: 3/4; width: auto; height: auto;display: flex;justify-content: center;align-items: center;">
+            &#169; 2023 Noi Vong Tay Lon Music CO., LTD. All rights Reserved.
+        </div>
+
+
+
+    </footer>
+    <main>
+
+    </main>
+
+
+
+
+
+
+
+    <div  id="khungDangNhap"  class="khungDangNhap">
+        <div  class="dangnhap">
+            <div data-aos="flip-down" onclick="tatDangKy(),batDangNhap(), changeClassChild(),notChangeClassChild2()" class="nut-form-dang-nhap">Sign <i id="iconChild" class="fa-solid fa-right-to-bracket" style="padding-left: 5px;color: #ffffff;"></i> </div>
+            <div onclick="tatDangNhap(),batDangKy(),notChangeClassChild(),changeClassChild2()"  class="nut-form-dang-ky">Register <i id="iconChild2" class="fa-regular fa-address-card" style="padding-left: 5px;color: #000000;"></i> <span onclick="TatKhungDangNhap(), notChangeClass()" class="x2" id="x2"><i style="color: rgb(250, 0, 0);" class="fa-sharp fa-solid fa-1 fa-circle-xmark"></i></span></div>
+            <form id="form-dang-nhap"  class="form-dang-nhap"action="">
+                <p class="textforlogin-Email">Email</p>
+                <input class="inputforEmail" type="text">
+                <p class="textforlogin-Password">Password</p>
+                <input class="inputforPassword"  type="password">
+       
+                <input class="sumbitforLogin" type="button" value="Login">
+                <a href="#form-dang-ky" class="textforForgotpassword">Forgot your password?</a>
+                <a onclick="tatDangNhap(),batDangKy()"  class="textforHaveNotAccount">Do not have an account?</a>
+               <!-- <a href="">Forgot your password?</a>  -->
+            </form>
+            <form id="form-dang-ky" class="form-dang-ky" action="">
+                <p class="textforFirstName">First Name</p>
+                <input type="text" class="inputforFirstName">
+                <p class="textforLastName">Last Name</p>
+                <input type="text" class="inputforLastName">
+                <p class="textforEmail1">Email</p>
+                <input type="email" class="inputforEmail1">
+                <p class="textforlogin-Password1">Password</p>
+                <input class="inputforPassword1"  type="password">
+                <div style="grid-row: 9/10;"></div>
+                <input class="sumbitforRegister" type="button" value="Send"> 
+            </form>
+           
+        </div>
+        
+    </div>
+    <!-- đây là dialog -->
+    <div id="dialog" class="dialog">
+        <div data-aos="fade-up" class="dialog-content">
+            <div class="x" style="display: flex;justify-content: center;align-items: center;">
+                <span class="x" id="x"><i style="color: white;cursor: pointer;" class="fa-sharp fa-solid fa-2x fa-circle-xmark"></i></span>
+            </div>
+           
+        </div>
+    </div>
+    <!-- form đăng nhập/đăng xuất -->
+
+
+    </main>
+<script src="index.js">
+</script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
